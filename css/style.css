@@ -1,5 +1,5 @@
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
+	background: #c6bcb6 url('https://unsplash.com/photos/UR2DMIFuc5c');
 	color: #333;
 }
 
@@ -15,6 +15,7 @@ header, nav, main, footer {
 	margin: auto;
 }
 
+h1 {font-family: 'Space Mono', monospace;}
 
 /* Header styles */
 header { 
@@ -70,3 +71,7 @@ footer {
 	text-align: center;
  }
  footer p { padding: 20px; }
+ p {font-family: 'Space Mono', monospace;
+}
+h2 {font-family: 'Space Mono', monospace;}
+li {font-family: 'Karla', sans-serif;}
