@@ -1,78 +1,52 @@
-
-* {
-	box-sizing: border-box;
+.container{
+  
+  width:1000px;
+  margin: 30px auto;
+  
+  display:grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px; 
+  grid-gap: 30px;
+  
+  & > * {
+     background-color: orangered; 
+     padding: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
 }
 
-body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
-	color: #333;
+.header{
+  grid-column: 1/-1;
+  background-color:black;
 }
 
-a {
-	text-decoration: none;
-	color: #333;
+.sidebar{
+   grid-row: 2/4;
+  grid-column: 4/-1;
+  background-color:#0000;
 }
 
-a:hover { color: Tomato; }
-
-header, nav, main, footer {
-	width: 80%;
-	margin: auto;
+.main-content{
+  grid-row: 3/4;
+  grid-column:1/span 3;
+  background-color:#FED100;
 }
 
-
-/* Header styles */
-header { 
-	background-color: #000;
-	color: BlanchedAlmond;
-	min-height: 100px;
-	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
+.footer{
+  grid-column: 1/-1;
+  background-color:#000000;
 }
 
-header h1 {
-	padding: 40px 60px;
-	font-size: 48px;
+.small-box-1{
+  background-color: #009B3A;
 }
 
-
-/* Nav styles */
-nav { background-color: #333; }
-nav ul { 
-	display: flex;
-	justify-content: flex-end;
-}
-nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
-
-
-/* Main styles */
-main { 
-	background-color: #fff;
-	display: grid;
-	grid-template-columns: 60% 40%;
+.small-box-2{
+  background-color: #000000;
 }
 
-section {
-	padding: 40px 60px;
+.small-box-3{
+  background-color: #009B3A;
 }
-
-section ul, aside ul {
-	list-style-type: square;
-	margin-top: 20px; 
-	margin-left: 30px;
-	margin-bottom: 40px;
-}
-
-aside {
-	padding: 40px 10px;
-}
-
-/* Footer styles */
-footer { 
-	background-color: #000;
-	color: white;
-	text-align: center;
- }
- footer p { padding: 20px; }
